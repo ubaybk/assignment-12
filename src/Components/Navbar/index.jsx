@@ -13,7 +13,7 @@ const Navbar = ({ propsMenu }) => {
   return (
     <>
       <div className="">
-        <div className="flex justify-between  items-center md:mt-4">
+        <div className="flex justify-between mt-4  items-center md:mt-4">
           <div className="flex items-center font-bold text-[30px] md:text-[30px] gap-2">
             <img src="/img/logo.png" alt="Logo Ku" className="w-6 md:w-12" />
             <h1>Positivus</h1>
