@@ -10,8 +10,8 @@ const CaseStudies = ({ propsCaseStudies }) => {
           <div key={item}>
             <div >
                 {data.titleCaseStudies.map((isi, idx) => (
-                  <div key={idx} className="flex flex-col justify-center items-center">
-                    <h1 className="custom-title mb-5">{isi.title}</h1>
+                  <div key={idx} className="flex flex-col justify-center items-center md:flex-row md:justify-start md:items-center  md:mb-10 md:mt-16 md:gap-5">
+                    <h1 className="custom-title mb-5 md:mb-0">{isi.title}</h1>
                     <p className="text-center">{isi.desc}</p>
                   </div>
                 ))}

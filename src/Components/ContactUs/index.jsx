@@ -2,7 +2,7 @@ const ContactUs = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-center items-center mt-[-8px]">
+        <div className=" flex flex-col justify-center items-center mt-[-8px] md:justify-start md:flex-row md:mb-10  md:gap-5">
           <h1 className="custom-title mb-5">Contact Us</h1>
           <p className="text-center mb-5">
             Connect with Us: Let's Discuss Your Digital Marketing Needs

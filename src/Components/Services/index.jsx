@@ -5,9 +5,9 @@ const Services = ({ propsServices, propsTitleServices }) => {
       <div className="">
         {propsTitleServices.map((item, idx) => (
           <div key={idx} className="mb-5">
-            <div className="flex flex-col justify-center items-center md:justify-start md:flex-row gap-5 md:mb-10 md:mt-8">
+            <div className="flex flex-col justify-center items-center md:justify-start md:flex-row gap-5 md:mb-10 md:mt-8 ">
               <h1 className="custom-title">{item.title}</h1>
-              <p className="text-center md:text-start md:w-[500px]">
+              <p className="text-center md:text-start md:w-[700px] md:text-[20px]">
                 {item.desc}
               </p>
             </div>
@@ -32,7 +32,12 @@ const Services = ({ propsServices, propsTitleServices }) => {
                 </h1>
 
                 <div className="flex justify-around items-end">
-                  <FaLocationArrow className="text-primary bg-black rounded-full p-1 w-8 h-8" />
+                  <a href="">
+                    <div className="md:flex md:items-center md:gap-3 hover:scale-90">
+                      <FaLocationArrow className="text-primary bg-black rounded-full p-1 w-8 h-8" />
+                      <h1 className={`hidden md:block ${data.hover} `}>Learn More</h1>
+                    </div>
+                  </a>
                   <img src={data.img} className="md:mt-[-40px]" alt="gambar" />
                 </div>
               </div>
@@ -49,7 +54,7 @@ const Services = ({ propsServices, propsTitleServices }) => {
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
-          <div className="flex justify-center bg-black rounded-xl">
+          <div className="flex justify-center bg-black rounded-xl hover:scale-90 cursor-pointer">
             <button className=" text-white  py-3">Get your proposal</button>
           </div>
         </div>

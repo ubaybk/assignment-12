@@ -9,9 +9,9 @@ function MyCarousel({ propsCarousel }) {
         {propsCarousel.map((data, index) => (
           <div key={index}>
             {/* Slide dengan teks */}
-            <div className={`flex  flex-col justify-center ${data.color} gap-5 h-60 rounded-2xl  text-white p-8`}>
-              <h1 className="text-[16px] font-bold">{data.konten1}</h1>
-              <div className="text-primary font-semibold flex items-center gap-4">
+            <div className={`flex  flex-col justify-center ${data.color} gap-5 h-60 rounded-2xl md:items-center  text-white p-8`}>
+              <h1 className="text-[16px] font-bold ">{data.konten1}</h1>
+              <div className="text-primary font-semibold flex  items-center gap-4">
                 <h1>Learn more</h1>
                 <MdArrowOutward />
               </div>

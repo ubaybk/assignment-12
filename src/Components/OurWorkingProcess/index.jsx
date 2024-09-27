@@ -15,8 +15,8 @@ const OurWorkingProcess = ({ propsOurWork }) => {
   return (
     <>
       <div className="">
-        <div className="flex flex-col justify-center items-center mb-5">
-          <h1 className="custom-title mb-5">Our Working Process</h1>
+        <div className="flex flex-col justify-center items-center mb-5 md:justify-start md:flex-row md:mb-10 md:mt-16 md:gap-5">
+          <h1 className="custom-title mb-5 md:mb-0">Our Working Process</h1>
           <p className="text-center">
             Step-by-Step Guide to Achieving Your Business Goals
           </p>
