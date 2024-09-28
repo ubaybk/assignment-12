@@ -21,9 +21,9 @@ const menu = [
     team: "Team",
     testimonials: "Testimonials",
     contactUs: "Contact Us",
-  }
-]
-// End Menu 
+  },
+];
+// End Menu
 // Start Data Hero Section
 const heroSection = [
   {
@@ -79,7 +79,7 @@ const services = [
     textBgColor: "bg-white",
     color: "bg-black",
     img: "./img/services/3.png",
-    hover: "text-white"
+    hover: "text-white",
   },
   {
     subtitle1: "Email",
@@ -101,7 +101,7 @@ const services = [
     textBgColor: "bg-white",
     color: "bg-black",
     img: "./img/services/6.png",
-    hover: "text-white"
+    hover: "text-white",
   },
 ];
 // End Services
@@ -228,13 +228,13 @@ const testimonials = [
   },
 ];
 
-const address =[
+const address = [
   {
     email: "Email: info@positivus.com",
     phone: "Phone: +62 21 12345678",
-    address: "Address: Jl. Raya Pasar Minggu, Jakarta Selatan"
-  }
-]
+    address: "Address: Jl. Raya Pasar Minggu, Jakarta Selatan",
+  },
+];
 
 function App() {
   return (
@@ -244,12 +244,10 @@ function App() {
         style={{ scrollBehavior: "smooth" }}
       >
         <section id="navbar">
-
-        <Navbar propsMenu={menu} />
+          <Navbar propsMenu={menu} />
         </section>
         <section id="about">
-        <HeroSection propsHeroSection={heroSection} />
-
+          <HeroSection propsHeroSection={heroSection} />
         </section>
         <LabelRuning propsRunning={runningLogo} />
         <section id="services">
@@ -275,14 +273,13 @@ function App() {
         </section>
       </div>
       <Footer propsFooter={menu} propsAddress={address} />
-      <div className="bg-slate-400 w-max rounded-3xl p-3 fixed bottom-3 right-3 cursor-pointer hover:scale-75">
+
+      {/* button scroll */}
       <a href="#navbar">
-      <FaArrowTurnUp className="text-primary " />
-
+        <div className="bg-slate-400 w-max rounded-3xl p-3 fixed bottom-3 right-3 cursor-pointer hover:scale-75">
+          <FaArrowTurnUp className="text-primary " />
+        </div>
       </a>
-        
-
-      </div>
     </>
   );
 }
