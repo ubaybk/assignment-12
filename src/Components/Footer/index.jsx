@@ -72,9 +72,9 @@ const Footer = ({ propsFooter, propsAddress }) => {
           <hr className="bg-white h-1" />
         </div>
 
-        <div className="text-white mb-9 text-[12px] flex flex-col items-center md:flex-row md:text-[14px] md:gap-60">
+        <div className="text-white mb-9 text-[12px] flex flex-col items-center md:flex-row  md:gap-60">
           <h1>© 2023 Ubay. All Rights Reserved. </h1>
-          <h1>Privacy Policy</h1>
+          <h1 className="underline decoration-white">Privacy Policy</h1>
         </div>
       </div>
     </>
