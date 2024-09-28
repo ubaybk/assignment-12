@@ -22,7 +22,7 @@ const Navbar = ({ propsMenu }) => {
           <div >
             {propsMenu.map((data, index) => (
               <div key={index} className="hidden gap-8 lg:flex md:mr-[5px] md:text-[18px] lg:text[30px]">
-                <a href="" className="animation-hover">
+                <a href="#about" className="animation-hover">
                   {data.aboutUs}
                 </a>
                 <a href="#services" className="animation-hover">

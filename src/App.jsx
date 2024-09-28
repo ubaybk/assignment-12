@@ -9,6 +9,7 @@ import Team from "./Components/Team";
 import Testimonials from "./Components/Testimonials";
 import Footer from "./Components/Footer";
 import ContactUs from "./Components/ContactUs";
+import { FaArrowTurnUp } from "react-icons/fa6";
 
 // Start Menu
 const menu = [
@@ -242,8 +243,14 @@ function App() {
         className="px-8 flex flex-col gap-10"
         style={{ scrollBehavior: "smooth" }}
       >
+        <section id="navbar">
+
         <Navbar propsMenu={menu} />
+        </section>
+        <section id="about">
         <HeroSection propsHeroSection={heroSection} />
+
+        </section>
         <LabelRuning propsRunning={runningLogo} />
         <section id="services">
           <Services
@@ -268,6 +275,14 @@ function App() {
         </section>
       </div>
       <Footer propsFooter={menu} propsAddress={address} />
+      <div className="bg-slate-400 w-max rounded-3xl p-3 fixed bottom-3 right-3 cursor-pointer hover:scale-75">
+      <a href="#navbar">
+      <FaArrowTurnUp className="text-primary " />
+
+      </a>
+        
+
+      </div>
     </>
   );
 }

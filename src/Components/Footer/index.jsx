@@ -13,7 +13,7 @@ const Footer = ({ propsFooter, propsAddress }) => {
                 key={index}
                 className="flex flex-col justify-center items-center text-white  md:grid md:grid-cols-4  md:mr-6  gap-5 mb-5"
               >
-                <a href="" className="animation-hover-footer">
+                <a href="#about" className="animation-hover-footer">
                   {item.aboutUs}
                 </a>
                 <a href="#services" className="animation-hover-footer">

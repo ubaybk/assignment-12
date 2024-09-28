@@ -12,7 +12,7 @@ const Sidebar = ({ handlerHamburger, propsSideMenu }) => {
             key={index}
             className="flex flex-col items-end bg-primary font-semibold p-3 w-30 rounded-xl"
           >
-            <a href="" className="animation-hover">
+            <a href="#about" className="animation-hover">
               {data.aboutUs}
             </a>
             <a href="#services" className="animation-hover">

@@ -13,14 +13,14 @@ const ContactUs = () => {
             <div className="flex justify-around">
               <div className="flex items-center mb-4">
                 <input
-                  id="radio2"
+                  id="radio1"
                   type="radio"
                   name="radio-group"
-                  className="w-4 h-4 text-primary bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
+                  className="w-4 h-4 text-primary bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 "
                 />
                 <label
                   htmlFor="radio2"
-                  className="ml-2 text-sm font-medium text-gray-900"
+                  className="ml-2 text-sm font-medium text-gray-900 md:text-[16px]"
                 >
                   Say Hi
                 </label>
@@ -35,7 +35,7 @@ const ContactUs = () => {
                 />
                 <label
                   htmlFor="radio2"
-                  className="ml-2 text-sm font-medium text-gray-900"
+                  className="ml-2 text-sm font-medium text-gray-900 md:text-[16px]"
                 >
                   Get a Quote
                 </label>
